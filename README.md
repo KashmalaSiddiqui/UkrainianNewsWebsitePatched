@@ -1,5 +1,4 @@
 # UkrainianNewsWebsitePatched
-# Ukrainian News Website - Patched Version
 
 ## Overview
 
