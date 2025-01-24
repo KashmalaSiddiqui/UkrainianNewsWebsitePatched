@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the **patched version** of the Ukrainian News Website. The vulnerabilities present in the unpatched version have been identified and resolved to ensure a secure implementation. This version can be used as a reference for understanding secure coding practices.
+This repository contains the **patched version** of the Ukrainian News Website. The vulnerabilities present in the unpatched version have been identified and resolved to ensure a secure implementation. This version can be used as a reference for understanding secure coding practices.This was made for eductaional purposes and only patches the implemented vulnerabilities
 
 ### Features
 - Member login and admin login functionality.
