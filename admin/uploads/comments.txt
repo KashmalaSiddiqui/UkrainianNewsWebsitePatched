@@ -1,0 +1,1 @@
+News ID: 1419 | Comment: <script>alert('DOM XSS')</script>

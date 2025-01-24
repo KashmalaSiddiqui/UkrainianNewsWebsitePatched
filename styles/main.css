@@ -1,0 +1,972 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Registration and Login Page Styles Only */
+body.login-page .container,
+body.registration-page .container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+body.login-page h2,
+body.registration-page h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+body.login-page .form-group,
+body.registration-page .form-group {
+    margin-bottom: 1.2rem;
+}
+
+body.login-page label,
+body.registration-page label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+body.login-page input[type="text"],
+body.login-page input[type="password"],
+body.registration-page input[type="text"],
+body.registration-page input[type="password"],
+body.registration-page input[type="email"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+body.login-page button,
+body.registration-page button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #0078D7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+body.login-page button:hover,
+body.registration-page button:hover {
+    background-color: #0056b3;
+}
+/* ------------------REGISTRATION AND LOGIN PAGE FINISH------------------------- */
+
+/* This is the Front-end header part */
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar .search-container {
+    display: flex; /* Ensures input and button are aligned side by side */
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center; /* Align items vertically in the center */
+    margin: 0 20px; /* Add spacing around the search bar */
+    max-width: 400px; /* Optional: limit the width */
+    /*flex-grow: 1;  Allow the container to expand within available space */
+}
+
+.navbar .search-input {
+    flex: 1; /* Allow the input to grow and fill space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; /* Rounded corners on the left */
+    font-size: 16px;
+    outline: none;
+    border-right: none; /* Remove overlapping border with the button */
+    box-sizing: border-box;
+}
+
+.navbar .search-button {
+    padding: 10px 16px;
+    background-color: #004080; 
+    color: white;
+    border: 1px solid #fff;
+    
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar  .search-button:hover {
+    background-color: #0056b3; 
+}
+
+
+.logo {
+    margin: 0;
+    font-size: 2.0rem; /* Adjust as needed */
+    color: #fff;
+    display: flex;
+    align-items: center; /* Ensure text inside the logo aligns */
+    height: 100%;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 10px; /* Spacing between buttons */
+    margin: 0; /* Ensure no unnecessary margins */
+    padding: 0;
+    align-items: center; /* Center align vertically */
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+/* Register Button Style */
+.btn-register {
+    background-color: #fff;
+    color: #004080;
+    border: 1px solid #004080;
+}
+
+.btn-register:hover {
+    background-color: #004080;
+    color: #fff;
+}
+
+/* Login Button Style */
+.btn-login {
+    background-color: #004080;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-login:hover {
+    background-color: #fff;
+    color: #004080;
+    border: 1px solid #004080;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    margin: 2rem auto;
+    width: 80%;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-item {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.news-item h2 {
+    margin: 0;
+    color: #0078D7;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%; 
+   
+    /* margin-top: auto; */
+    /* left: 0;
+    
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+}
+
+
+/* -------------------------------MANGE COMMENTS START------------------------------------ */
+
+/* Manage Comments Page Specific Styles */
+.manage-comments {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.manage-comments h1, 
+.manage-comments h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+/* Container for Add Comment and Download Logs */
+.manage-comments .comments-row {
+    display: flex;
+    justify-content: space-between; /* Space between sections */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Add space between the sections */
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+/* Add Comment Section */
+.manage-comments .add-comment,
+.manage-comments .download-logs {
+    flex: 1; /* Equal width for both sections */
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 300px; /* Prevent shrinking too much */
+}
+
+
+.manage-comments .add-comment h2,
+.manage-comments .download-logs h2 {
+    text-align: left;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.manage-comments .add-comment form,
+.manage-comments .download-logs form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add space between form elements */
+}
+
+/* Form Inputs */
+.manage-comments .add-comment form input,
+.manage-comments .add-comment form textarea,
+.manage-comments .download-logs form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+.manage-comments .add-comment form button,
+.manage-comments .download-logs form button {
+    background: #004080;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.manage-comments .add-comment form button:hover,
+.manage-comments .download-logs form button:hover {
+    background: #2980b9;
+}
+
+/* Comments List */
+.manage-comments .comments-list {
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.manage-comments .comment-box {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.manage-comments .comment-box p {
+    margin: 0 0 10px;
+}
+
+.manage-comments .comment-box button {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.manage-comments .comment-box button:hover {
+    background: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .manage-comments .comments-row {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .manage-comments .add-comment,
+    .manage-comments .download-logs {
+        width: 100%;
+    }
+
+    .manage-comments .comments-list {
+        width: 100%;
+    }
+}
+/*----------------------------- MANGE COMMENTS FINISH-------------- */
+
+
+/* Admin Dashboard START*/
+.admin-dashboard {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.admin-dashboard h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+
+
+.admin-dashboard .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+/* Admin Dashboard - Container */
+.admin-dashboard .container {
+    max-width: 90%; /* Increase width to occupy most of the page */
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Upload Section */
+.admin-dashboard .upload-section {
+    margin-top: 20px;
+    width: 100%; /* Stretch to fill container width */
+    text-align: center;
+}
+
+/* Align the elements in one row */
+.admin-dashboard .upload-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+}
+
+.admin-dashboard .upload-section label {
+    font-size: 1rem;
+    margin-right: 10px;
+    white-space: nowrap; /* Prevent line breaks in label */
+}
+
+.admin-dashboard .upload-section input[type="file"] {
+    flex: 1; /* Allow the file input to stretch */
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.admin-dashboard .upload-section button {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.admin-dashboard .upload-section button:hover {
+    background-color: #c0392b;
+}
+
+
+.admin-dashboard input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.admin-dashboard button {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.admin-dashboard button:hover {
+    background: #c0392b;
+}
+
+.admin-dashboard .uploaded-image {
+    position: absolute; /* Place the image at a fixed location */
+    /*top: 20px;           Distance from the top */
+    right: 140px;        /* Distance from the right */
+    width: 100px;       /* Fixed width */
+    height: 100px;      /* Fixed height */
+    border: 2px solid #ddd; /* Subtle border */
+    border-radius: 8px;     /* Rounded corners */
+    object-fit: cover;      /* Ensure the image fits the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+}
+
+
+
+/* Admin Header */
+.admin-header {
+    background-color: #004080;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #3498db;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.admin-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+/* .admin-header-nav {
+    display: flex;
+    gap: 1.5rem;
+} */
+/* .admin-dashboard nav {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #3498db;
+    padding: 10px;
+} */
+
+.admin-header nav {
+    display: flex;
+    gap: 2rem; /* Space between navigation links */
+    justify-content: center;
+    flex: 1; /* Push navigation links to the center */
+    text-align: center;
+}
+
+.admin-header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.admin-header nav a:hover {
+    color: #ecf0f1;
+}
+
+
+.admin-header .uploaded-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+    margin-left: 1rem;
+}
+
+.non-image-warning {
+    color: #ff0000;
+    font-size: 0.9rem;
+}
+
+/* ADMIN DASHBORAD FINISH */
+
+/* General Page Styles for the MangeAds page ADMIN Side */
+.manage-ads {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.manage-ads .container {
+    max-width: 90%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.ads-row {
+    display: flex;
+    justify-content: space-between; /* Aligns containers side by side */
+    align-items: flex-start; /* Aligns at the top */
+    gap: 20px; /* Space between containers */
+    margin-bottom: 20px;
+}
+
+.add-news,
+.display-ads,
+.ad-preview {
+    flex: 1; /* Equal width for all sections */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    min-width: 300px; /* Prevent shrinking */
+}
+
+/* Headings */
+.add-news h2,
+.display-ads h2,
+.ad-preview h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: left; /* Align headings to the left */
+    color: #333;
+}
+
+/* Forms */
+
+
+.ad-preview [type="text"],
+.ad-preview [type="url"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-news [type="text"],
+.add-news [type="url"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.ad-preview button {
+    padding: 10px;
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.ad-preview button:hover {
+    background-color: #0056b3;
+}
+
+
+.add-news button {
+    padding: 10px;
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.add-news button:hover {
+    background-color: #0056b3;
+}
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #004080;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Preview Image */
+.preview-box {
+    margin-top: 10px;
+}
+
+.preview-image {
+    width: 100%; /* Stretch to container width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ads-row {
+        flex-direction: column; /* Stack sections vertically */
+    }
+}
+
+/* Add New Ad and Fetch Ad Preview Containers */
+.add-news,
+.ad-preview {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
+/* Current Ads Container */
+.current-ads {
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Preview Box Styling */
+.preview-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.preview-box img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Section where MangeADs FINISH */
+
+/* back arrow to go back to old page */
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+}
+
+.back-arrow:hover {
+    text-decoration: underline;
+}
+
+.back-arrow-news{
+    margin-top: 80px;
+    position: absolute;
+    left: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* ------------------------------- NEWs PAGE AD START------------------------------------ */
+
+/* Main Content Area */
+.page-container {
+    width: 70%; /* Take up most of the space */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top:30px;
+}
+
+.complete-container-news {
+    /* margin-top: 30px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Left and Right Sidebars */
+.sidebar {
+    width: 15%; /* Adjust as needed */
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.left-sidebar {
+   /*  //width: 30%; Adjust to balance with the right sidebar */
+    max-width: 500px; /* Optional: Limit the sidebar width */
+    min-width:200px; 
+    /* background-color: #f8f9fa; Light background for contrast */
+    /*  padding: 5px; Add padding for spacing */
+   /* border: 1px solid #ddd;  Optional: Add a subtle border */
+    /* border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Add a shadow for better visibility */
+}
+
+/* Left and Right Sidebars */
+.sidebar {
+    width: 15%; /* Adjust as needed */
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.sidebar .ad {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar .ad img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+/* .left-sidebar .ad {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.left-sidebar .ad a {
+    text-decoration: none;
+    display: block;
+    color: inherit;  Maintain default color for images 
+}
+*/
+
+.left-sidebar .ad img.ad-image {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional shadow for images */
+    margin-bottom: 5px; /* Space between image and title */
+} 
+
+.left-sidebar .ad a:hover img.ad-image {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    transition: transform 0.3s ease;
+}
+
+
+.right-sidebar {
+     /* //width: 30%; Adjust to balance with the right sidebar */
+     max-width: 500px; /* Optional: Limit the sidebar width */
+     min-width:200px; 
+     /* background-color: #f8f9fa; /* Light background for contrast */
+     /* padding: 5px; Add padding for spacing */
+    /* border: 1px solid #ddd;  Optional: Add a subtle border */
+     /* border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Add a shadow for better visibility */ 
+ } 
+ 
+ .right-sidebar .ad {
+     margin-bottom: 20px;
+     text-align: center;
+ }
+ 
+ .right-sidebar .ad a {
+     text-decoration: none;
+     display: block;
+     color: inherit; /* Maintain default color for images */
+ }
+ 
+ .right-sidebar .ad img.ad-image {
+     max-width: 100%; /* Ensure the image fits within the container */
+     height: auto; /* Maintain aspect ratio */
+     border-radius: 5px;
+     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional shadow for images */
+     margin-bottom: 5px; /* Space between image and title */
+ }
+ 
+ .right-sidebar .ad a:hover img.ad-image {
+     transform: scale(1.05); /* Slight zoom effect on hover */
+     transition: transform 0.3s ease;
+ }
+
+
+/* ------------------------------- NEWs PAGE AD FINISH------------------------------------ */
+
+/* ------------------------------- MAIN PAGE LAYOUT------------------------------------ */
+.complete-container {
+    display: flex;
+    justify-content: space-between; /* Space between main content and sidebars */
+    gap: 10px; /* Adjust gap between sections */
+    margin: 20px auto;
+    max-width: 1000px; /* Total width of the layout */
+}
+
+
+.side-news-item img {
+    width: 60px; /* Fixed width */
+    height: 60px; /* Fixed height */
+    object-fit: cover; /* Ensures the image fills the space while maintaining its aspect ratio */
+    margin-right: 10px; /* Adds spacing between the image and text */
+    border: 1px solid #ddd; /* Optional: Adds a light border */
+    border-radius: 5px; /* Optional: Rounds the corners */
+}
+
+.side-news-item {
+    display: flex;
+    align-items: center; /* Vertically align image and text */
+    margin-bottom: 10px;
+}
+
+
+
+.side-news-item a {
+    color: #000; /* Set text color to black */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Adjust font size if necessary */
+    line-height: 1.2; /* Improve readability */
+    display: inline-block; /* Ensure proper layout */
+}
+
+.side-news-item a:hover {
+    color: #007bff; /* Optional: Add hover effect for better UX */
+}
+
+
+.logout-button{
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Approved Comments Container */
+.approved-comments {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading for Comments Section */
+.comments-heading {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 5px;
+}
+
+/* Comments List */
+.comments-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual Comment Item */
+.comment-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Last Comment Item Should Have No Margin */
+.comment-item:last-child {
+    margin-bottom: 0;
+}

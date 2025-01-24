@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  public:
+    build:
+      context: .
+    ports:
+      - "8002:80" # Client on port 8000
+    volumes:
+      - ./public:/var/www/html # Mount client directory
+      - ./includes:/var/www/html/includes
+      - ./scripts:/var/www/html/scripts
+      - ./styles:/var/www/html/styles
+    depends_on:
+      - db
+    environment:
+      - PHP_ENV=development
+
+  admin:
+    build:
+      context: .
+    ports:
+      - "8003:80" # Admin on port 8003
+    volumes:
+      - ./admin:/var/www/html # Mount admin directory
+      - ./includes:/var/www/html/includes
+      - ./scripts:/var/www/html/scripts
+      - ./styles:/var/www/html/styles
+    depends_on:
+      - db
+    environment:
+      - PHP_ENV=development
+
+  db:
+    image: mysql:8.0
+    container_name: mysql_db2
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: users
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3309:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d
+
+volumes:
+  db_data:
